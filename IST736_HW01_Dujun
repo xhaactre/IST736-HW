@@ -1,1 +1,14 @@
 
+# HW_1: Lexicon-based Text Mining
+# Author: [Your Name]
+# Description: This script analyzes text to identify words related to happy moments.
+
+import pandas as pd
+
+# Load dataset
+df = pd.read_csv("happy_moments.csv")
+
+# Convert text to lowercase
+df["text"] = df["text"].str.lower()
+
+print(df.head())  # Display the first few rows
